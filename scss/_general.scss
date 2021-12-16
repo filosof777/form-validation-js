@@ -20,7 +20,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $font-body;
-  background-color: $bg-color;
+  background-color: #282A36;
 }
 
 h1,
@@ -56,4 +56,53 @@ img {
 
 .col-pdg {
   padding: 0;
+}
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+
+  &__label {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    color: #000;
+  }
+
+  &__input {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: block;
+    height: 30px;
+    padding: 5px 10px;
+    color: #000;
+  }
+
+  &__btn {
+    background-color: #5680e9;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+  
+    &:active {
+      background-color: #0248fa;
+    }
+  }
+
+  &__span {
+    color: transparent;
+  }
 }
